@@ -15,7 +15,7 @@ const navItems = {
 
 const Navbar = () => {
   return (
-    <section className="-ml-[8px] mb-8 tracking-tight">
+    <aside className="-ml-[8px] mb-8 tracking-tight">
       <div className="lg:sticky lg:top-20">
         <LayoutGroup>
           <nav
@@ -32,7 +32,7 @@ const Navbar = () => {
           </nav>
         </LayoutGroup>
       </div>
-    </section>
+    </aside>
   );
 }
 
