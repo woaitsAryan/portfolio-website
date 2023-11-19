@@ -8,9 +8,9 @@ const navItems = {
   '/': {
     name: 'home',
   },
-  '/projects':{
-    name: 'projects'
-  }
+  // '/projects':{
+  //   name: 'projects'
+  // }
 };
 
 const Navbar = () => {

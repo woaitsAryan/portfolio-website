@@ -3,7 +3,6 @@ import clsx from 'clsx';
 import type { Metadata } from 'next';
 import { GeistSans } from 'geist/font/sans';
 import { GeistMono } from 'geist/font/mono';
-import { Analytics } from '@vercel/analytics/react';
 import Navbar from './section/navbar';
 import Footer from './section/footer';
 
@@ -58,7 +57,6 @@ export default function RootLayout({
           <Navbar />
           {children}
           <Footer/>
-          <Analytics />
         </main>
       </body>
     </html>

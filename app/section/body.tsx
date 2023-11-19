@@ -11,7 +11,7 @@ const BodyComponent = () => {
             </h1>
             <div className="prose prose-neutral dark:prose-invert">
                 <p>
-                   About me
+                   A bit about myself
                 </p>
             </div>
             <ul className="prose prose-neutral dark:prose-invert list-disc">
