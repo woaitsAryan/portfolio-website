@@ -8,9 +8,12 @@ const navItems = {
   '/': {
     name: 'home',
   },
-  // '/projects':{
-  //   name: 'projects'
-  // }
+  '/projects':{
+    name: 'projects'
+  },
+  '/blogs':{
+    name: 'blogs'
+  }
 };
 
 const Navbar = () => {

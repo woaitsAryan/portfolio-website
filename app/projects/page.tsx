@@ -1,13 +1,15 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import projectData from './projectData';
+import ProjectLink from './projectLink';
+import { propagateServerField } from 'next/dist/server/lib/render-server';
 
 export const metadata: Metadata = {
     title: 'Projects',
     description: 'Projects I\'ve worked on',
 };
 
-const ProjectsPage = () => {
+const Projects = () => {
     return (
         <section>
             <h1 className="font-semibold text-2xl mb-8 tracking-tighter">
@@ -15,24 +17,11 @@ const ProjectsPage = () => {
             </h1>
             <ul>
                 {projectData.map((project) => (
-                    <li key={project.url}>
-                        <Link
-                            className="flex flex-col space-y-1 mb-4"
-                            href={project.url} >
-                            <div className="w-full flex flex-col">
-                                <p className="text-neutral-900 dark:text-neutral-100 tracking-tight">
-                                    {project.name}
-                                </p>
-                            </div>
-                        </Link>
-                        <p className="text-neutral-600 dark:text-neutral-400">
-                            {project.tech}
-                        </p>
-                    </li>
+                    <ProjectLink key = {project.url} name={project.name} url={project.url} description={project.description} />
                 ))}
             </ul>
         </section>
     );
 }
 
-export default ProjectsPage;
+export default Projects;

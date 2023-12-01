@@ -5,6 +5,7 @@ import { GeistSans } from 'geist/font/sans';
 import { GeistMono } from 'geist/font/mono';
 import Navbar from './section/navbar';
 import Footer from './section/footer';
+import Particles from './components/Particles';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://aryanbharti.com'),
@@ -54,9 +55,13 @@ export default function RootLayout({
     >
       <body className="antialiased max-w-2xl mb-40 flex flex-col md:flex-row mx-4 mt-8 lg:mx-auto">
         <main className="flex-auto min-w-0 mt-6 flex flex-col px-2 md:px-0">
+          <Particles
+            className="absolute inset-0 -z-10 animate-fade-in"
+            quantity={100}
+          />
           <Navbar />
           {children}
-          <Footer/>
+          <Footer />
         </main>
       </body>
     </html>
