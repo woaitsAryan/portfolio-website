@@ -1,0 +1,6 @@
+version: "3.0"
+services:
+  ffcs-frontend:
+    build: .
+    ports:
+      - "3100:3100" 
