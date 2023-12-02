@@ -32,9 +32,23 @@ export default function Particles({
 	const dpr = typeof window !== "undefined" ? window.devicePixelRatio : 1;
 
 	// useEffect(() => {
-
-	// 	canvasRef.current?.style.setProperty("height", "200vh");
-	// },[])
+	// 	const handleResize = () => {
+	// 	  const canvas = canvasRef.current;
+	// 	  if(canvas){
+	// 		canvas.width = window.innerWidth;
+	// 		canvas.height = window.innerHeight;
+	// 	  }
+	// 	};
+	// 	window.addEventListener('scroll', handleResize);
+	// 	window.addEventListener('resize', handleResize);
+	// 	handleResize();
+	  
+	// 	return () => {
+	// 		window.removeEventListener('resize', handleResize);
+	// 		window.removeEventListener('scroll', handleResize);
+	// 	}
+	//   }, []);
+	  
 
 	useEffect(() => {
 		if (canvasRef.current) {
@@ -73,7 +87,7 @@ export default function Particles({
 	useEffect(() => {
 		onMouseMove();
 	}, [mousePosition.x, mousePosition.y]);
-
+	
 	useEffect(() => {
 		initCanvas();
 	}, [refresh]);
@@ -257,8 +271,8 @@ export default function Particles({
 	};
 
 	return (
-		<div className={className} ref={canvasContainerRef} aria-hidden="true">
-			<canvas ref={canvasRef} />
+		<div className={className} ref={canvasContainerRef} aria-hidden="true" >
+			<canvas ref={canvasRef} className="fixed top-0 left-0 -z-10"/>
 		</div>
 	);
 }

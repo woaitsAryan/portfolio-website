@@ -54,11 +54,11 @@ export default function RootLayout({
         GeistMono.variable
       )}
     >
-      <body className="antialiased max-w-2xl mb-40 flex flex-col md:flex-row mx-4 mt-8 lg:mx-auto">
+      <body className="antialiased max-w-2xl mb-10 flex flex-col md:flex-row mx-4 mt-8 lg:mx-auto">
         <main className="flex-auto min-w-0 mt-6 flex flex-col px-2 md:px-0">
           <Particles
             className="absolute inset-0 -z-10 animate-fade-in"
-            quantity={100}
+            quantity={150}
           />
           <Navbar />
           {children}
