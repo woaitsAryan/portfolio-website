@@ -7,21 +7,21 @@ const BodyComponent = () => {
             </h1>
             <div className="prose prose-neutral dark:prose-invert">
                 <p>
-                   A bit about myself
+                    A bit about myself
                 </p>
             </div>
             <ul className="prose prose-neutral dark:prose-invert list-disc">
                 <li>
-                    I love tech, all the systems and innovations in place in order to make a computer tick, I love learning about them.
+                    I love tech. All the systems and innovations in place in order to make a computer tick. I love learning about them.
                 </li>
                 <li>
                     Backend Dev. I find coding them to be so incredibly fullfilling.
                 </li>
                 <li>
-                    DevOps and Cloud is something I&apos;m not very proficient in but constantly learning and improving.
+                    DevOps and Cloud is something I&apos;m not very proficient in but am constantly learning and improving.
                 </li>
                 <li>
-                    I do CyberSec for fun. CTFs is something I do in my free time.
+                    I enjoy doing CyberSec for fun, and in my free time, I like to participate CTFs.
                 </li>
             </ul>
             <div className="prose prose-neutral dark:prose-invert">
@@ -30,8 +30,8 @@ const BodyComponent = () => {
                     My projects and blogs are linked in the navbar above.
                 </p>
             </div>
-          
-           
+
+
         </section>
     );
 }

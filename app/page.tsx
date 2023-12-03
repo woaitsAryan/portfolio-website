@@ -2,8 +2,8 @@ import BodyComponent from './section/body'
 
 export default function Home() {
   return (
-    <main>
+    <section>
       <BodyComponent/>
-    </main>
+    </section>
   )
 }
