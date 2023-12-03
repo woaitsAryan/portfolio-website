@@ -6,7 +6,6 @@ import { GeistMono } from 'geist/font/mono';
 import Navbar from './section/navbar';
 import Footer from './section/footer';
 import Particles from './components/Particles';
-import { Analytics } from '@vercel/analytics/react';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://aryanbharti.com'),
@@ -63,7 +62,6 @@ export default function RootLayout({
           <Navbar />
           {children}
           <Footer />        
-          <Analytics />
         </main>
       </body>
     </html>
