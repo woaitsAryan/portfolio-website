@@ -22,6 +22,14 @@ export const metadata: Metadata = {
     siteName: 'Aryan Bharti',
     locale: 'en_US',
     type: 'website',
+    images: [
+      {
+        url: 'https://aryanbharti.com/opengraph.png',
+        width: 256,
+        height: 256,
+        alt: 'Aryan Bharti\'s portfolio website',
+      },
+    ]
   },
   robots: {
     index: true,
@@ -37,6 +45,7 @@ export const metadata: Metadata = {
   twitter: {
     title: 'Aryan Bharti',
     card: 'summary_large_image',
+    images: 'https://aryanbharti.com/opengraph.png',
   },
 };
 
