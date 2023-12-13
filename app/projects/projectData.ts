@@ -6,6 +6,16 @@ interface projectStruct{
 
 const projectData: projectStruct[] = [
     {
+        "name":"Terraform templates",   
+        "url":"https://github.com/woaitsAryan/terraform-templates",
+        "description":"Automate provisioning cloud infrastructure setup"
+    },
+    {
+        "name":"Go Echo CRUD",   
+        "url":"https://github.com/woaitsAryan/go-echo-crud",
+        "description":"A basic CRUD API made in in Golang using Echo"
+    },
+    {
         "name":"Portfolio website",   
         "url":"https://github.com/woaitsAryan/portfolio-website",
         "description":"The website you're seeing!"
