@@ -15,6 +15,10 @@ export const metadata: Metadata = {
     template: '%s | Aryan Bharti',
   },
   description: 'Developer, speaker and writer.',
+  authors:[{name: 'Aryan Bharti'}],
+  creator: 'Aryan Bharti',
+  publisher: 'Aryan Bharti',
+  category: 'Technology',
   openGraph: {
     title: 'Aryan Bharti',
     description: 'Developer, speaker and writer.',
