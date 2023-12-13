@@ -1,4 +1,3 @@
-
 const BodyComponent = () => {
     return (
         <section>
