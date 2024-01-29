@@ -6,6 +6,11 @@ interface projectStruct{
 
 const projectData: projectStruct[] = [
     {
+        "name": "Regit",
+        "url": "https://github.com/woaitsAryan/regit",
+        "description": "CLI tool written in Golang to rewrite ownership in Git history"
+    },
+    {
         "name":"Terraform templates",   
         "url":"https://github.com/woaitsAryan/terraform-templates",
         "description":"Automate provisioning cloud infrastructure setup"
