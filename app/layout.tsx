@@ -74,7 +74,7 @@ export default function RootLayout({
         <main className="flex-auto min-w-0 mt-6 flex flex-col px-2 md:px-0">
           <Particles
             className="absolute inset-0 -z-10 animate-fade-in"
-            quantity={150}
+            quantity={300}
           />
           <Navbar />
           {children}
