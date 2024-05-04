@@ -6,6 +6,16 @@ interface projectStruct{
 
 const projectData: projectStruct[] = [
     {
+        "name": "Dockerfiles",
+        "url": "https://github.com/woaitsAryan/Dockerfiles",
+        "description": "The ultimate Dockerfile collection you'll ever need"
+    },
+    {
+        "name": "Go Logger",
+        "url": "https://github.com/csivitu/csi-logger",
+        "description": "An entire logging system written purely in Go"
+    },
+    {
         "name": "Regit",
         "url": "https://github.com/woaitsAryan/regit",
         "description": "CLI tool written in Golang to rewrite ownership in Git history"
