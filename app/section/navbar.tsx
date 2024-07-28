@@ -13,6 +13,9 @@ const navItems = {
   },
   '/blogs':{
     name: 'blogs'
+  },
+  'resume.pdf': {
+    name: 'resume',
   }
 };
 
