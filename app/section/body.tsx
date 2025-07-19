@@ -5,7 +5,7 @@ export const BodyComponent = () => {
 			<div className="prose prose-neutral dark:prose-invert">
 				<p>A bit about myself</p>
 			</div>
-			<ul className="prose prose-neutral dark:prose-invert list-disc space-y-2 my-6">
+			<ul className="prose prose-neutral dark:prose-invert list-disc space-y-2 my-6 ml-2">
 				<li>
 					Tech enthusiast. Always up-to-date with current trends like reading Typescript beta notes, but mainly dwelling
 					in tech twitter etc.

@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { blogData } from "@/data/blog";
-import { BlogLink } from "./blog-link";
+import { BlogLink } from "./link";
 
 export const metadata: Metadata = {
 	title: "Blogs",

@@ -60,7 +60,7 @@ export const ProjectLink = (props: projectProps) => {
 					<p className="font-medium text-neutral-900 dark:text-neutral-100">{props.name}</p>
 					<p className="text-neutral-600 dark:text-neutral-400">{props.description}</p>
 				</div>
-				<div className="text-neutral-700 dark:text-neutral-300 transform transition-transform duration-300 group-hover:-rotate-12">
+				<div className="text-neutral-700 dark:text-neutral-300 transform transition-transform duration-300 group-hover:-rotate-12 ml-1">
 					<ArrowIcon />
 				</div>
 			</a>
