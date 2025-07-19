@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useRef, useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 interface ParticlesProps {
 	className?: string;
@@ -25,7 +25,7 @@ export default function Particles({
 	const canvasRef = useRef<HTMLCanvasElement>(null);
 	const canvasContainerRef = useRef<HTMLDivElement>(null);
 	const context = useRef<CanvasRenderingContext2D | null>(null);
-	const circles = useRef<any[]>([]);
+	const circles = useRef<Circle[]>([]);
 	const mousePosition = useMousePosition();
 	const mouse = useRef<{ x: number; y: number }>({ x: 0, y: 0 });
 	const canvasSize = useRef<{ w: number; h: number }>({ w: 0, h: 0 });
@@ -42,14 +42,14 @@ export default function Particles({
 	// 	window.addEventListener('scroll', handleResize);
 	// 	window.addEventListener('resize', handleResize);
 	// 	handleResize();
-	  
+
 	// 	return () => {
 	// 		window.removeEventListener('resize', handleResize);
 	// 		window.removeEventListener('scroll', handleResize);
 	// 	}
 	//   }, []);
-	  
 
+	// biome-ignore lint/correctness/useExhaustiveDependencies: Unsure
 	useEffect(() => {
 		if (canvasRef.current) {
 			context.current = canvasRef.current.getContext("2d");
@@ -63,31 +63,33 @@ export default function Particles({
 		};
 	}, []);
 
-    function useMousePosition(): MousePosition {
-        const [mousePosition, setMousePosition] = useState<MousePosition>({
-            x: 0,
-            y: 0,
-        });
-    
-        useEffect(() => {
-            const handleMouseMove = (event: MouseEvent) => {
-                setMousePosition({ x: event.clientX, y: event.clientY });
-            };
-    
-            window.addEventListener("mousemove", handleMouseMove);
-    
-            return () => {
-                window.removeEventListener("mousemove", handleMouseMove);
-            };
-        }, []);
-    
-        return mousePosition;
-    }
+	function useMousePosition(): MousePosition {
+		const [mousePosition, setMousePosition] = useState<MousePosition>({
+			x: 0,
+			y: 0,
+		});
 
+		useEffect(() => {
+			const handleMouseMove = (event: MouseEvent) => {
+				setMousePosition({ x: event.clientX, y: event.clientY });
+			};
+
+			window.addEventListener("mousemove", handleMouseMove);
+
+			return () => {
+				window.removeEventListener("mousemove", handleMouseMove);
+			};
+		}, []);
+
+		return mousePosition;
+	}
+
+	// biome-ignore lint/correctness/useExhaustiveDependencies: Unsure
 	useEffect(() => {
 		onMouseMove();
 	}, [mousePosition.x, mousePosition.y]);
-	
+
+	// biome-ignore lint/correctness/useExhaustiveDependencies: Unsure
 	useEffect(() => {
 		initCanvas();
 	}, [refresh]);
@@ -271,8 +273,8 @@ export default function Particles({
 	};
 
 	return (
-		<div className={className} ref={canvasContainerRef} aria-hidden="true" >
-			<canvas ref={canvasRef} className="fixed top-0 left-0 -z-10"/>
+		<div className={className} ref={canvasContainerRef} aria-hidden="true">
+			<canvas ref={canvasRef} className="fixed top-0 left-0 -z-10" />
 		</div>
 	);
 }
