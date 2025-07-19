@@ -18,12 +18,9 @@ export const NavItem = (props: NavProps) => {
 		<Link
 			key={props.url}
 			href={props.url}
-			className={clsx(
-				"transition-all hover:text-neutral-800 dark:hover:text-neutral-200 flex align-middle",
-				{
-					"text-neutral-500": !isActive,
-				},
-			)}
+			className={clsx("transition-all hover:text-neutral-800 dark:hover:text-neutral-200 flex align-middle", {
+				"text-neutral-500": !isActive,
+			})}
 		>
 			<span className="relative py-1 px-2">
 				{props.name}

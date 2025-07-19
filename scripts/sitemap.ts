@@ -20,7 +20,5 @@ import { SitemapStream, streamToPromise } from "sitemap";
 	const sitemapPath = resolve(__dirname, "../public", "sitemap.xml");
 	const writeStream = createWriteStream(sitemapPath);
 
-	await streamToPromise(sitemapStream).then((data) =>
-		writeStream.write(data.toString()),
-	);
+	await streamToPromise(sitemapStream).then((data) => writeStream.write(data.toString()));
 })();

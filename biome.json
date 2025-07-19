@@ -6,7 +6,8 @@
 		"useIgnoreFile": true
 	},
 	"formatter": {
-		"enabled": true
+		"enabled": true,
+		"lineWidth": 120
 	},
 	"linter": {
 		"enabled": true
