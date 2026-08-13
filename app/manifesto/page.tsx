@@ -1,4 +1,11 @@
-export const Manifesto = () => {
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+	title: "Manifesto",
+	description: "My tech manifesto",
+};
+
+const Manifesto = () => {
 	return (
 		<section>
 			<div className="prose prose-neutral dark:prose-invert">
