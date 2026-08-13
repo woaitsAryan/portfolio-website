@@ -17,6 +17,9 @@ const navItems = {
 	"resume.pdf": {
 		name: "resume",
 	},
+	"/manifesto": {
+		name: "manifesto",
+	},
 };
 
 export const Navbar = () => {
